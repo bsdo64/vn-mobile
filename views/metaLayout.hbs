@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    {{#if meta}}
+      {{#each meta}}
+        <meta property="{{name}}" content="{{content}}" />
+      {{/each}}
+    {{/if}}
+  </head>
+
+  <script>
+    var element = document.querySelector('meta[name="og:url"]') || document.querySelector('meta[property="og:url"]');
+    var url = element && element.getAttribute("content");
+
+    window.location.href = url || '/';
+
+  </script>
+  <body>
+  </body>
+</html>

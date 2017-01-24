@@ -1,0 +1,116 @@
+@mixin popupMixin($top, $right, $padding, $width) {
+  &:before {
+    top: -.325em;
+    right: 1em;
+    bottom: auto;
+    left: auto;
+    margin-left: 0;
+    box-shadow: -1px -1px 0 0 #bababc;
+    position: absolute;
+    content: '';
+    width: .75em;
+    height: .75em;
+    background: #FFF;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 2;
+  }
+
+  padding: $padding;
+  width: $width;
+  position: absolute;
+  top: $top;
+  right: $right;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  z-index: 1900;
+  border: 1px solid #D4D4D5;
+  line-height: 1.4285em;
+  max-width: 250px;
+  background: #FFF;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(0, 0, 0, .87);
+  border-radius: .07142857rem;
+  box-shadow: 0 2px 4px 0 rgba(34, 36, 38, .12), 0 2px 10px 0 rgba(34, 36, 38, .08);
+  margin: 0;
+}
+
+.my_area {
+  padding-right: 10px;
+
+  .dropdown {
+    display: inline-block;
+  }
+
+  .dropdown__content {
+    display: none;
+    position: absolute;
+  }
+
+  .dropdown--active .dropdown__content {
+    display: block;
+  }
+
+  #profile_id_button {
+    padding-left: 5px;
+
+    color: #fff;
+    &:hover {
+      color: #cbdbf0;
+    }
+  }
+
+  #noti_button {
+    cursor: pointer;
+  }
+  .item {
+    &.profile {
+      #profile_popup {
+        @include popupMixin(45px, 10px, (10px 15px), 250px);
+      }
+    }
+
+    &.noti {
+      i.alarm ~ .label {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        font-size: 10px;
+        padding: 2px;
+      }
+
+      #alarm_popup {
+        @include popupMixin(15px, -32px, 0, 260px);
+
+        .alarm_header {
+          padding: 5px 10px;
+          font-size: 12px;
+        }
+
+        .ui.feed {
+          margin-right: 1px;
+
+          .is-read {
+            background: #dedede;
+          }
+
+          .event {
+            padding: 5px 10px;
+            .label + .content {
+              margin: 0 0 0 10px;
+            }
+
+            .content {
+              .summary {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

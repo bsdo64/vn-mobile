@@ -1,0 +1,39 @@
+#activity {
+  .activity-header {
+    padding: 10px;
+
+    .activity-background {
+      width: 100%;
+      background: #058294;
+      position: relative;
+      border: 1px solid #058294;
+      color: #fff;
+      border-bottom: none;
+
+      & > h2.header {
+        margin-top: 30px;
+
+        img.circular.users.icon {
+          width: 100px;
+        }
+      }
+      .activity-meta {
+        text-align: center;
+        padding-bottom: 10px;
+      }
+      .nick {
+        color: #fff;
+      }
+    }
+
+    .activity-menu {
+      :hover {
+        background: #dedede;
+      }
+      font-size: 12px;
+      margin: 0;
+      border: 1px solid #058294;
+      border-top: 1px solid rgba(34, 36, 38, .15);
+    }
+  }
+}

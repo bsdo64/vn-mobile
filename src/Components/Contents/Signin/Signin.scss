@@ -1,0 +1,80 @@
+.section_pad {
+  padding: 15px;
+}
+
+.contents {
+  h2 .sub {
+    font-size: 60%;
+  }
+}
+
+#signin_section {
+  form {
+    width: 60%;
+    margin: auto;
+  }
+
+  #fregister_term {
+
+    .terms {
+      height: 120px;
+      overflow-y: scroll;
+      border: 1px solid #eee;
+      padding: 15px;
+    }
+  }
+
+  #fregister_private {
+    .privacy {
+      height: 120px;
+      overflow-y: scroll;
+      border: 1px solid #eee;
+      padding: 15px;
+    }
+  }
+
+  .agreements {
+    text-align: right;
+
+    .ui.checkbox {
+      padding: 15px;
+    }
+    label {
+      cursor: pointer;
+    }
+  }
+
+  .btn_confirm {
+    text-align: center;
+
+    .btn_submit {
+      cursor: pointer;
+      border: none;
+      color: #fff;
+      background: #2B5F5B;
+      width: 100%;
+      height: 40px;
+      display: block;
+      line-height: 20px;
+    }
+  }
+}
+
+#signinform_section {
+  form {
+    width: 60%;
+    margin: auto;
+  }
+  .btn_submit {
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background: #2B5F5B;
+    width: 100%;
+    height: 40px;
+    display: block;
+    line-height: 20px;
+    text-align: center;
+  }
+
+}

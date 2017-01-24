@@ -1,0 +1,274 @@
+.widget {
+  margin-top: 10px;
+}
+
+#trend_box {
+  #widget_user_info {
+    background: #004858;
+    .ui.items > .item {
+      padding: 10px;
+      border-bottom: 1px solid #20394A;
+      margin: 0;
+
+      #user_avatar_img {
+
+      }
+
+      > .content {
+        padding-left: 10px;
+
+        .user_info_header {
+          color: #cbdbf0;
+          height: 16px;
+          span {
+            line-height: 16px;
+            font-size: 16px;
+            float: left;
+            padding-right: 5px;
+          }
+          img {
+            width: 16px;
+          }
+        }
+
+        > .description {
+          display: table;
+          table-layout: auto;
+          width: 100%;
+
+          * {
+            color: white !important;
+            font-size: 12px;
+          }
+          > .item {
+            display: table-cell;
+            background: #0A5263;
+            text-align: center;
+            padding: 3px 9px;
+            -webkit-box-shadow: 1px 1px 1px #213B4C;
+            -moz-box-shadow: 1px 1px 1px #213B4C;
+            box-shadow: 1px 1px 1px #213B4C;
+            border-left: 1px solid #0E6479;
+            border-right: 1px solid #2D495D;
+
+            span.item_col {
+              font-size: 10px;
+            }
+            .item_num {
+              span, i {
+                font-size: 16px;
+              }
+
+              #user_grade_img {
+                width: 15px;
+              }
+            }
+          }
+        }
+      }
+
+      #stat_box {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+
+        > .colum {
+          &:first-child {
+            width: 90px;
+            border-right: 1px solid #20394A;
+          }
+          &:last-child {
+            padding-left: 10px;
+          }
+          display: table-cell;
+          color: #fff;
+          font-size: 11px;
+
+          .ui.description.title {
+            font-weight: normal;
+            font-size: 11px;
+            margin-bottom: 5px;
+
+            .exp_description {
+              display: inline-block;
+              font-size: 9px;
+              color: #b6b6b6;
+            }
+          }
+
+          .point_line {
+            padding-right: 10px;
+            span.ui.description {
+              line-height: 11px;
+            }
+            .point {
+              font-size: 12px;
+            }
+            .tp_point {
+              color: #C5DBF0;
+            }
+            .rp_point {
+              color: #EC6666;
+            }
+          }
+
+          .remain_exp {
+            color: #aaa;
+            font-size: 10px;
+          }
+
+        }
+      }
+
+      #store-button {
+        padding: 0;
+
+        .description {
+          margin: 0;
+          display: inline-block;
+
+          .item {
+            cursor: pointer;
+          }
+        }
+      }
+
+      #skill_box {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+
+        > .colum {
+          display: table-cell;
+          color: #fff;
+          font-size: 11px;
+
+          .ui.description.title {
+            font-weight: normal;
+            font-size: 11px;
+            margin-bottom: 5px;
+
+            .exp_description {
+              display: inline-block;
+              font-size: 9px;
+              color: #b6b6b6;
+            }
+          }
+
+          .skill_line {
+            padding-right: 10px;
+            span.ui.description {
+              line-height: 11px;
+            }
+            .point {
+              font-size: 12px;
+            }
+            .tp_point {
+              color: #C5DBF0;
+            }
+            .rp_point {
+              color: #EC6666;
+            }
+          }
+
+          .remain_exp {
+            color: #aaa;
+            font-size: 10px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+#skill_box {
+  .skill_line {
+    .skills {
+      .skill {
+        display: inline-block;
+        margin: 0 .25rem .5rem;
+
+        .skill_cool {
+          width: 32px;
+          height: 32px;
+          position: absolute;
+          font-size: 13px;
+          color: #004858;
+          text-align: center;
+          line-height: 32px;
+          background: #fff;
+          display: inline-block;
+          z-index: 1;
+          opacity: 0.8;
+        }
+
+        .skill_cool_effect {
+          width: 32px;
+          height: 32px;
+          position: absolute;
+          font-size: 13px;
+          color: #004858;
+          text-align: center;
+          line-height: 32px;
+          background: #fff;
+          display: inline-block;
+          z-index: 1;
+
+          opacity: 0;
+          animation: puffIn 200ms 1;
+          -webkit-animation: puffIn 200ms 1; /* Chrome, Safari, Opera */
+        }
+
+        .skill_image {
+          margin: 0;
+          width: 32px;
+        }
+
+        .skill2 {
+          .ui.sub.header {
+            color: #058294;
+          }
+          .meta {
+            font-size: 9px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes puffIn {
+  0% {
+    opacity: 0.7;
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1.1, 1.1)
+  }
+  75% {
+    opacity: 0.7;
+    transform: scale(1, 1)
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes puffIn {
+  0% {
+    opacity: 0.7;
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1.1, 1.1)
+  }
+  75% {
+    opacity: 0.7;
+    transform: scale(1, 1)
+  }
+  100% {
+    opacity: 0;
+  }
+}

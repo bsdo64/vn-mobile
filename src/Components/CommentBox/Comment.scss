@@ -1,0 +1,139 @@
+#comment_box {
+  margin: 0 0 0 70px;
+  padding: 10px;
+  font-size: 0.9em;
+  width: 620px;
+  background: #fff;
+  box-shadow: 1px 1px 1px 0 #848484;
+
+  .comment_header {
+    height: 20px;
+
+    .comment_count {
+      float: left;
+    }
+    ul.comment_sort_box {
+      margin: 0;
+      padding: 0;
+      float: right;
+      li {
+        display: inline-block;
+        padding-right: 5px;
+      }
+    }
+  }
+
+  .actions {
+    .like_icon, .comment_icon, .report_icon {
+      display: inline-block;
+    }
+    .like_box, .comment_box, .report_box {
+      display: inline-block;
+    }
+
+    .like_box, .comment_box {
+      margin-right: 10px;
+    }
+    .like_box {
+      .like_icon {
+        color: grey;
+        :hover {
+          color: red;
+        }
+
+        &.active {
+          color: red;
+        }
+
+        i.icon {
+          cursor: pointer;
+        }
+      }
+    }
+    .comment_box {
+      color: #27485E;
+    }
+    .report_box {
+      float: right;
+
+      .report_icon {
+        :hover {
+          color: #27485E;
+        }
+        display: inline-block;
+        padding-right: 5px;
+        color: #D0D6DA;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &.comments > form.ui.reply.form {
+    .field {
+      width: 535px;
+    }
+  }
+
+  form.ui.reply.form {
+    margin-top: 1em;
+
+    .field {
+      width: 490px;
+      display: inline-block;
+
+      &.update {
+        width: 478px;
+      }
+
+      .comment_input {
+        border: 1px solid #cacaca;
+        padding: 10px;
+        outline: none;
+        min-height: 37px;
+        font-size: 0.9em;
+
+        p {
+          margin-bottom: 5px;
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .ui.primary.submit.icon.button {
+      float: right;
+    }
+  }
+
+  .comment_list {
+    margin-bottom: 10px;
+
+    .comment {
+
+      .user_icon_img {
+        width: 12px;
+        margin-left: 5px;
+      }
+
+      .text {
+        .comment_text {
+          p {
+            margin-bottom: 5px;
+          }
+        }
+
+        .close_update {
+          float: right;
+          position: absolute;
+          top: 36px;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+.report_icon.none {
+  display: none !important;
+}

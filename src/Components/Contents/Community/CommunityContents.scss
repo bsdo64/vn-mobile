@@ -1,0 +1,144 @@
+#forum_contents {
+  font-size: 12px;
+  margin: 20px 0 0 70px;
+  width: 620px;
+  background: #fff;
+  box-shadow: 1px 1px 1px 0px #848484;
+
+  table {
+    border-right: none;
+    border-left: none;
+
+    th {
+      padding: 3px 5px;
+      color: #fff;
+      background: #058294;
+      font-weight: normal;
+    }
+
+    tr.announce {
+      background: #e1f9fd;
+    }
+
+    td {
+      i.announce-icon {
+        padding-right: 10px;
+        color: #e9164a;
+      }
+      a.article_title {
+        max-width: 350px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+
+      span {
+        padding-left: 5px;
+        display: inline-block;
+        position: absolute;
+        color: #aaa;
+        font-weight: bold;
+        font-size: 10px;
+      }
+    }
+  }
+
+  h3.ui.header {
+    font-size: 14px;
+
+    .sub.header {
+      font-size: 12px;
+      background: #D8E4F5;
+      padding: 10px;
+      margin-top: 5px;
+    }
+  }
+
+  .ui.horizontal.celled.list {
+    padding-left: 10px;
+
+    .item {
+      font-size: 12px;
+
+      .content {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#forum_info {
+  .descriptioin {
+    float: left;
+  }
+
+  .meta.forum_meta {
+    float: right;
+
+    .managers {
+      text-align: right;
+    }
+    .forum_counts {
+      float: right;
+      margin-right: 0.3em;
+
+      span.follow_counts {
+        color: #165e90;
+        font-size: 15px;
+        margin-right: 25px;
+      }
+      span.subs_counts {
+        color: #004858;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .follow_button.active {
+    .fa.fa-star {
+      color: #058294;
+    }
+  }
+
+  .dropdown.subscribe_dropdown {
+    display: inline;
+
+    .dropdown__content {
+      display: none;
+      position: absolute;
+      top: 45px;
+      right: 57px;
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #dedede;
+      z-index: 1;
+
+      ul.collection_list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li.collection_item {
+          margin: 0;
+          padding: 0;
+
+          input[type="checkbox"] {
+            & ~ label {
+              cursor: pointer;
+              font-size: 13px;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+
+    &.dropdown--active {
+      .dropdown__content {
+        display: block;
+      }
+    }
+  }
+}

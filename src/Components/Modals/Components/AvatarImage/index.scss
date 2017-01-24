@@ -1,0 +1,122 @@
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.avatar_img {
+  & > .items > .item {
+    padding: 12px;
+
+  }
+  & > .items > .header {
+    height: 35px;
+    background: #178496;
+    color: #fff;
+    position: relative;
+
+    .header_title {
+      padding: 10px;
+    }
+  }
+
+  .delete_avatar_btn {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+
+    & ~ img.image_preview {
+      width: 100%;
+    }
+  }
+}
+
+input[type=range].slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  margin: 9.1px 0;
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 14.8px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #494c4d;
+    border-radius: 0px;
+    border: 0px solid #010101;
+  }
+  &::-webkit-slider-thumb {
+    box-shadow: 0.6px 0.6px 0.6px #000000, 0px 0px 0.6px #0d0d0d;
+    border: 0px solid #ffffff;
+    height: 33px;
+    width: 13px;
+    border-radius: 2px;
+    background: #62dab1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -9.1px;
+  }
+  &:focus::-webkit-slider-runnable-track {
+    background: #767b7c;
+  }
+  &::-moz-range-track {
+    width: 100%;
+    height: 14.8px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #494c4d;
+    border-radius: 0px;
+    border: 0px solid #010101;
+  }
+  &::-moz-range-thumb {
+    box-shadow: 0.6px 0.6px 0.6px #000000, 0px 0px 0.6px #0d0d0d;
+    border: 0px solid #ffffff;
+    height: 33px;
+    width: 13px;
+    border-radius: 2px;
+    background: #62dab1;
+    cursor: pointer;
+  }
+  &::-ms-track {
+    width: 100%;
+    height: 14.8px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  &::-ms-fill-lower {
+    background: #1c1d1e;
+    border: 0px solid #010101;
+    border-radius: 0px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  }
+  &::-ms-fill-upper {
+    background: #494c4d;
+    border: 0px solid #010101;
+    border-radius: 0px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  }
+  &::-ms-thumb {
+    box-shadow: 0.6px 0.6px 0.6px #000000, 0px 0px 0.6px #0d0d0d;
+    border: 0px solid #ffffff;
+    height: 33px;
+    width: 13px;
+    border-radius: 2px;
+    background: #62dab1;
+    cursor: pointer;
+    height: 14.8px;
+  }
+  &:focus {
+    &::-ms-fill-lower {
+      background: #494c4d;
+    }
+    &::-ms-fill-upper {
+      background: #767b7c;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+#user_best_collection {
+
+  & > h5.title {
+    margin-bottom: 5px;
+  }
+
+  > .sub_category.item.collection_item {
+    display: block;
+    position: relative;
+    height: auto;
+    padding-left: 10px;
+
+    & > a {
+      padding-left: 10px;
+      text-align: left;
+      color: #fff;
+      width: 100%;
+      position: absolute;
+      display: block;
+      z-index: 5;
+    }
+  }
+
+  .collection {
+    z-index: 1;
+    a {
+      color: #fff
+    }
+  }
+
+  .collection_list.hide {
+    display: none;
+  }
+  .collection_list {
+    color: #000;
+    padding: 5px;
+    z-index: 1;
+
+    h4.forum_list_header {
+      font-size: 13px;
+    }
+
+    ul.forum_list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li.forum_list_item {
+        margin: 0;
+        padding: 0 0 0 10px;
+
+        &:before {
+          content: '';
+          border-left: 1px dotted #fff;
+          width: 1px;
+          height: 19px;
+          left: 5px;
+          position: absolute;
+          margin-left: 10px;
+        }
+
+        &:after {
+          content: '';
+          border-bottom: 1px dotted #fff;
+          width: 0.5em;
+          height: 0.5em;
+          left: 5px;
+          position: absolute;
+          margin-left: 10px;
+        }
+
+        i.fa-file-o {
+          font-size: 12px;
+          color: #fff;
+          cursor: pointer;
+          padding-right: 4px;
+        }
+
+        a {
+          color: #fff;
+        }
+
+        i.un_subscribe {
+          float: right;
+          font-size: 12px;
+          color: #9d9d9d;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .create_collection {
+    height: 25px;
+    position: relative;
+  }
+  .create-box {
+    &:before {
+      content: " ";
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 2px;
+      left: -5px;
+      background: #fff;
+    }
+    color: #000;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 226px;
+    min-width: 200px;
+    background: #fff;
+    border: 1px solid #dedede;
+    min-height: 150px;
+    z-index: 1;
+
+    .field {
+      & > input {
+        padding: 2px 4px;
+        font-size: 11px;
+      }
+    }
+  }
+
+  .create-box-enter {
+    opacity: 0.01;
+  }
+
+  .create-box-enter.create-box-enter-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+  }
+
+  .create-box-leave {
+    opacity: 1;
+  }
+
+  .create-box-leave.create-box-leave-active {
+    opacity: 0.01;
+    transition: opacity 200ms ease-in;
+  }
+}

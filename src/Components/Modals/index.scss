@@ -1,0 +1,9 @@
+.ReactModal__Overlay {
+  &.ui.dimmer {
+    z-index: 101;
+  }
+
+  .ReactModal__Overlay--after-open {
+
+  }
+}

@@ -1,0 +1,65 @@
+@import '../default';
+
+#best_category {
+
+  menu.sub_category_list {
+
+    ul {
+
+      li > h5 {
+        padding-bottom: 5px;
+      }
+
+      li#best_filter {
+        .sub_category.item {
+          position: relative;
+          margin-bottom: 10px;
+        }
+
+        .Select {
+          .Select-control {
+            background-color: #058294;
+            border: none;
+            height: 12px;
+
+            .Select-placeholder {
+              line-height: 24px;
+              color: #fff;
+            }
+          }
+
+          &.Select--multi .Select-value {
+            background-color: #ebf5ff;
+            border: none;
+            color: #058294;
+            margin-left: 2px;
+            margin-top: 2px;
+          }
+
+          .Select-input {
+            height: 24px;
+            color: #fff;
+
+            & > input {
+              padding: 2px 0 2px;
+              line-height: 22px;
+            }
+          }
+          .Select-clear-zone {
+            color: #fff;
+          }
+          .Select-arrow-zone {
+            .Select-arrow {
+              color: #fff;
+            }
+          }
+
+          #react-select-2--backspace-remove-message {
+            color: #c0babf;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}

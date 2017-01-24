@@ -1,0 +1,44 @@
+#section_cldmm {
+  margin: 0 10px;
+}
+
+#my_forum {
+  padding: 10px;
+  background: #004858;
+  color: #fff;
+
+  .header {
+    font-weight: normal;
+    font-size: 11px;
+  }
+
+  .description {
+    font-weight: normal;
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: #dedede;
+  }
+
+  .forum_created_list.ui.list {
+    padding: 0;
+    margin-top: 5px;
+
+    .item {
+      .header {
+        color: #fff;
+      }
+
+      a {
+        color: #91a0af;
+
+        &:hover {
+          color: #007282;
+        }
+
+        &.active {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

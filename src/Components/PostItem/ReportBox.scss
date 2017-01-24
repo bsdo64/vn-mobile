@@ -1,0 +1,17 @@
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown--active .dropdown__content {
+  display: block;
+}
+
+.react-draggable {
+  position: fixed !important;
+  z-index: 100;
+}

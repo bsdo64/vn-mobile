@@ -1,0 +1,6 @@
+bundle.*
+.idea/
+bower_components/
+node_modules/
+dump.rdb
+*.log

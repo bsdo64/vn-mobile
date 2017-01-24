@@ -1,0 +1,40 @@
+body {
+  background: #e6e6e6; }
+
+#wrap {
+  width: 100%;
+  margin: 0 auto; }
+
+#global-header {
+  height: 35px; }
+  #global-header .top_area {
+    height: 35px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background: #00AABA linear-gradient(to right, #00AABA 0, #0E4458 100%);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 100; }
+    #global-header .top_area .top_contents {
+      position: relative;
+      height: 35px;
+      margin: 0 auto; }
+      #global-header .top_area .top_contents #top_logo {
+        float: left;
+        padding-left: 7px;
+        text-align: center; }
+      #global-header .top_area .top_contents #top_search {
+        padding-left: 10px;
+        line-height: 50px;
+        float: left;
+        width: 100px; }
+      #global-header .top_area .top_contents #top_my_area {
+        position: absolute;
+        right: 0; }
+
+#container {
+  float: none;
+  min-height: 100%; }
+  #container > #section > #contents {
+    position: relative; }

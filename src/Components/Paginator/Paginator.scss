@@ -1,0 +1,96 @@
+.pagination_box {
+  position: relative;
+  margin: 0 10px;
+
+  .ui.pagination.menu.small {
+
+    .left_arrow, .right_arrow {
+      position: absolute;
+      border: 1px solid rgba(34, 36, 38, 0.15);
+      box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+      border-radius: 0.07142857rem;
+      cursor: pointer;
+    }
+    .left_arrow {
+      left: 0;
+    }
+    .right_arrow {
+      right: 0;
+    }
+
+    .item:empty {
+      display: none;
+    }
+
+    .previous_pages, .next_pages {
+      display: inherit;
+
+      a:not(.ui):hover {
+        color: '';
+      }
+      a:not(.ui) {
+        color: '';
+        -webkit-transition: color .1s ease;
+        transition: color .1s ease;
+      }
+      a:hover {
+        cursor: pointer;
+      }
+      .ui.link.menu .item:active, .ui.menu .link.item:active, .ui.menu a.item:active {
+        background: rgba(0, 0, 0, .03);
+        color: rgba(0, 0, 0, .95);
+      }
+      .ui.link.menu .item:hover, .ui.menu .dropdown.item:hover, .ui.menu .link.item:hover, .ui.menu a.item:hover {
+        cursor: pointer;
+        background: rgba(0, 0, 0, .03);
+        color: rgba(0, 0, 0, .95);
+      }
+      .ui.pagination.menu .item {
+        min-width: 3em;
+        text-align: center;
+      }
+      .ui.menu > .item:first-child {
+        border-radius: .16666667rem 0 0 .16666667rem;
+      }
+
+      a {
+        border-right: 1px solid #ddd;
+        min-width: 3em;
+        text-align: center;
+
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        cursor: pointer;
+
+        position: relative;
+        vertical-align: middle;
+        line-height: 1;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background: 0 0;
+        padding: .91666667em 1.16666667em;
+        text-transform: none;
+        color: rgba(0, 0, 0, .87);
+        font-weight: 400;
+        -webkit-transition: background .1s ease, box-shadow .1s ease, color .1s ease;
+        transition: background .1s ease, box-shadow .1s ease, color .1s ease;
+        border-radius: 0 .16666667rem .16666667rem 0;
+      }
+    }
+  }
+}

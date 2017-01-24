@@ -1,0 +1,35 @@
+#search_forum_list {
+  padding-bottom: 10px;
+
+  h4 {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .search-forum-list {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+  }
+
+  li.search-forum-item {
+    border-bottom: 1px solid #eee;
+  }
+
+  .list_pagination {
+    height: 30px;
+    width: 100%;
+    padding: 5px 10px;
+
+    .prev_button {
+      display: inline-block;
+      float: left;
+    }
+
+    .next_button {
+      display: inline-block;
+      float: right;
+    }
+  }
+}
