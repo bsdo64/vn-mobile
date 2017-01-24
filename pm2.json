@@ -1,6 +1,6 @@
 {
   "apps" : [{
-    "name"        : "app",
+    "name"        : "mobile",
     "script"      : "bin/www",
     "node_args"   : "--harmony",
     "merge_logs"  : true,
