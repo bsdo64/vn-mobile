@@ -9,6 +9,10 @@
     border-right: none;
     border-left: none;
 
+    & > td.collapsing, & > th.collapsing {
+      white-space: normal;
+    }
+
     th {
       padding: 3px 5px;
       color: #fff;
@@ -27,7 +31,6 @@
       }
       a.article_title {
         max-width: 350px;
-        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         display: inline-block;

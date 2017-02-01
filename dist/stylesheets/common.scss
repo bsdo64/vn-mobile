@@ -39,7 +39,7 @@ body {
         padding-left: 10px;
         line-height: 50px;
         float: left;
-        width: 100px;
+        width: calc(100% - 160px)
       }
       #top_my_area {
         position: absolute;
