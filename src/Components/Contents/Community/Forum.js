@@ -387,7 +387,7 @@ const Forum = React.createClass({
                 forum.get('prefixes').map(this.createPrefixItem.bind(this, Prefixes))
               }
             </div>
-            <table className="ui table very compact">
+            <table className="ui table unstackable very compact">
               <thead>
               <tr>
                 <th className="center aligned collapsing">말머리</th>

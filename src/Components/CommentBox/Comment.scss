@@ -1,8 +1,8 @@
 #comment_box {
-  margin: 0 0 0 70px;
+  margin: 0;
+  max-width: none;
   padding: 10px;
   font-size: 0.9em;
-  width: 620px;
   background: #fff;
   box-shadow: 1px 1px 1px 0 #848484;
 
@@ -69,21 +69,15 @@
     }
   }
 
-  &.comments > form.ui.reply.form {
-    .field {
-      width: 535px;
-    }
-  }
-
   form.ui.reply.form {
     margin-top: 1em;
 
     .field {
-      width: 490px;
+      width: calc(100% - 50px);
       display: inline-block;
 
       &.update {
-        width: 478px;
+        width: calc(100% - 50px);
       }
 
       .comment_input {

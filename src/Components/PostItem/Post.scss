@@ -1,22 +1,25 @@
 #post_box {
   .post_item {
-    padding: 10px 10px 5px;
-    margin: 0;
-    width: 700px;
+    margin: 10px 0 0;
 
-    .ui.image.tiny {
-      width: 50px;
-    }
     .ui.content {
-      margin-left: 10px;
-      padding-left: 0;
+      margin-bottom: 10px;
       background: #fff;
       -webkit-box-shadow: 1px 1px 1px 0 #848484;
       -moz-box-shadow: 1px 1px 1px 0 #848484;
       box-shadow: 1px 1px 1px 0 #848484;
-      
+
       .post-flex-box {
         display: flex;
+
+        .post-avatar-image {
+          padding-left: 10px;
+
+          img {
+            width: 36px;
+            height: 36px;
+          }
+        }
       }
 
       .best_post_meta {

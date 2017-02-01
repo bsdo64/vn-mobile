@@ -75,12 +75,7 @@ $url_4: url(//i1.tc_cdn.net/cfs.tistory/static/top/bg_deny.gif);
   }
 }
 
-#tc_Foot {
-  position: static;
-  width: 490px;
-  margin: 0 auto;
-  text-align: center;
-}
+#tc_Foot {}
 
 .inner_footer {
   margin: 0;
@@ -91,6 +86,7 @@ $url_4: url(//i1.tc_cdn.net/cfs.tistory/static/top/bg_deny.gif);
     font-size: 11px;
     width: auto;
     padding: 20px 0;
+    text-align: center;
   }
 }
 
