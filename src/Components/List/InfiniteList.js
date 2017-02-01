@@ -64,8 +64,6 @@ const InfiniteList = React.createClass({
 
   componentDidMount() {
     $('.ui.embed').embed();
-
-    window.addEventListener('resize', this.setScroll)
   },
 
   setScroll() {
