@@ -34,7 +34,7 @@ const BestBox = React.createClass({
   getMoreBest({ previousPosition, currentPosition, event }) {
     if (previousPosition === 'below' && currentPosition === 'inside' && event) {
       const body = event.target.body;
-      if ((body) && body.clientHeight > 768) {
+      if ((body) && body.clientHeight > 200) {
         const { PaginationStore, GnbStore, listName, location, FireRequestGetMorePostList } = this.props;
         const Pagination = PaginationStore.get(listName);
         if (Pagination) {
