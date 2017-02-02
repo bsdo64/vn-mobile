@@ -212,6 +212,11 @@
             display: inline-block;
             float: right;
 
+            .dropdown__content {
+              right: 85px;
+              top: 25px;
+            }
+
             .report_icon {
               :hover {
                 color: #27485E;
